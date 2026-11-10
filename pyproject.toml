@@ -1,0 +1,24 @@
+[project]
+name = "nldate"
+version = "0.1.0"
+description = "Parse natural-language date expressions into datetime.date objects"
+readme = "README.md"
+authors = [
+    { name = "Jason Qin" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+nldate = "nldate:main"
+
+[build-system]
+requires = ["uv_build>=0.11.32,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=2.4.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+]
